@@ -1,4 +1,4 @@
-#SynTracker: a pipeline to track closely related microbial strains using genome synteny
+# SynTracker: a pipeline to track closely related microbial strains using genome synteny
 
 SynTracker is a pipeline to determine the biological relatedness of same-species microbial strains (conspecific strains) using synteny blocks identified in pairs of genomes or metagenomic assemblies. 
 
