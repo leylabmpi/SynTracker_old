@@ -8,11 +8,14 @@ SynTracker is a pipeline to determine the biological relatedness of same-species
 ## Input:
 SynTracker requires as input three types of information:
 **a.**	Reference genome: reference genomes could be provided complete or as a collection of contigs. If using a collection of contigs, all sequences should be kept in a single .fasta file. If using more than one reference genome (i.e., analyzing more than one species per run) all reference genome files should be located in the same folder.
+
 **b.**	Metagenomic assemblies/genomes: These data are the metagenomic samples/full genomes that would be compared. (How did I keep the assembly files in metagenomes? Talking about folder organization)
+
 **c.**	Metadata file: The metadata file contains essential information regarding the genomes/assemblies to be compared. Metadata file should be a tab delimited file. Headers should be “Sample/GroupA/GroupB/…” with each GroupX column corresponding to a different metadata field. Number of fields could be changed to the user preference, as long as the Relevant R function (put R function) is changed accordingly. 
 
 ## Running: 
-The Syntracker pipeline is composed of three parts, each executed by running a dedicated script.
+The Syntracker pipeline is composed of three parts, each executed by running a dedicated script:
+
 **a.**	Fragmentation of the reference genome (or genomes) to a collection of 1 kbp “central-regions”, located 4 kbp apart. 
 This part is executed by running:*python central_regions.py (input_folder) (output_folder)*
 •	Paths should be absolute paths. 
